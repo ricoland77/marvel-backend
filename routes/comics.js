@@ -4,7 +4,6 @@ const axios = require("axios");
 const router = express.Router();
 
 router.get("/comics", async (req, res) => {
-  // console.log(req.query);
   const limit = req.query.limit || "";
   const skip = req.query.skip || "";
   const title = req.query.title || "";
